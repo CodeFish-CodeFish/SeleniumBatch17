@@ -51,9 +51,6 @@ public class Practice {
         String actualJsText=BrowserUtils.getText(result);
         String expectedJsText="You entered text Ahmet in prompt popup";
         Assert.assertEquals(actualJsText,expectedJsText);
-
-
-
         /*
         1-Click First "click me " button and validate text from pop-up
         which is "I am an alert box!" and click OK button then
