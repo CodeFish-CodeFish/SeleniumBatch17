@@ -22,7 +22,7 @@ public class OpenChartLoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     WebElement loginButton;
 
-    @FindBy(css = "#alert")
+    @FindBy(css = ".alert-danger")
     WebElement errorMessage;
 
     public void login(String username,String password) throws InterruptedException {

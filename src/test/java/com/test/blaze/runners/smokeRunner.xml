@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Suite">
+
+    <test name="Blaze Main Functionalities">
+
+     <classes>
+
+        <class name="com.test.blaze.tests.BlazeOrderTest"> </class>
+
+     </classes>
+
+    </test>
+
+</suite>

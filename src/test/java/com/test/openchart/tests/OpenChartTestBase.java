@@ -13,16 +13,16 @@ public class OpenChartTestBase {
     public WebDriver driver;
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://demo.opencart.com/admin/index.php?route=common/login");
     }
 
     @AfterMethod
-    public void tearDown(){
-     //   driver.quit();
+    public void tearDown() {
+        //   driver.quit();
     }
 }

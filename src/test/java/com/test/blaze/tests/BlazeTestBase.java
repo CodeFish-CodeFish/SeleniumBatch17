@@ -1,4 +1,4 @@
-package com.test.bank.tests;
+package com.test.blaze.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -9,22 +9,22 @@ import utils.DriverHelper;
 
 import java.time.Duration;
 
-public class BankTestBase {
+public class BlazeTestBase {
 
     public WebDriver driver;
 
     @BeforeMethod
-    public void setup() {
+    public void setup(){
 //        WebDriverManager.chromedriver().setup();
 //        driver=new ChromeDriver();
 //        driver.manage().window().maximize();
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver= DriverHelper.getDriver();
-        driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
+        driver.get("https://www.demoblaze.com/#");
     }
 
     @AfterMethod
     public void tearDown(){
-       driver.quit();
+        driver.quit();
     }
 }
