@@ -3,6 +3,7 @@ package com.test.openchart.tests;
 import com.test.openchart.pages.OpenChartLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.ConfigReader;
 
 public class OpenChartLoginTest extends OpenChartTestBase{
 
@@ -17,7 +18,8 @@ public class OpenChartLoginTest extends OpenChartTestBase{
     @Test
     public void happyPath() throws InterruptedException {
         OpenChartLoginPage openChartLoginPage=new OpenChartLoginPage(driver);
-        openChartLoginPage.login("demo","demo");
+        openChartLoginPage.login(ConfigReader.readProperty("openchartusername"),
+                ConfigReader.readProperty("openchartpassword"));
         Assert.assertEquals(driver.getTitle().trim(),"Dashboard");
     }
     /*
