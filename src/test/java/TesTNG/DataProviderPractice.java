@@ -8,17 +8,16 @@ import java.util.Objects;
 public class DataProviderPractice {
 
 
-    @DataProvider(name = "couples")
-    public Object[][] getData(){
-        return new Object[][]{
-                {"Ahmet","Leyla"},
-                {"Tony","Mariela"},
-                {"Alexandra","Nick"}
-        };
+//    @DataProvider(name = "couples")
+//    public Object[][] getData(){
+//        return new Object[][]{
+//                {"Ahmet","Leyla"},
+//                {"Tony","Mariela"},
+//                {"Alexandra","Nick"}
+//        };
+//    }
 
-    }
-
-    @Test(dataProvider = "couples")
+    @Test(dataProvider = "couples",dataProviderClass = DataSupport.class)
     public void naming1(String firstCouple,String secondCouple){
         System.out.println(firstCouple+" & "+secondCouple);
     }
