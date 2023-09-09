@@ -3,6 +3,21 @@
 <suite name="Regression Suite">
 
     <test name="Bank Tests">
+        <parameter name="name" value="Ahmet"> </parameter>
+        <parameter name="lastName" value="Baldir"> </parameter>
+        <parameter name="zipCode" value="34534"> </parameter>
+        <parameter name="expectedMessage" value="Customer added successfully with customer id"> </parameter>
+        <parameter name="customerName" value="Ahmet Baldir"> </parameter>
+        <parameter name="currency" value="Dollar"> </parameter>
+        <parameter name="expectedAccountMessage" value="Account created successfully with account Number"> </parameter>
+        <parameter name="expectedHeaderLogin" value="Welcome Ahmet Baldir !!"> </parameter>
+        <parameter name="defaultBalance" value="0"> </parameter>
+        <parameter name="depositAmount" value="500"> </parameter>
+        <parameter name="expectedDepositMessage" value="Deposit Successful"> </parameter>
+        <parameter name="expectedBalance" value="500"> </parameter>
+        <parameter name="withdrawalAmount" value="300"> </parameter>
+        <parameter name="expectedTransactionMessage" value="Transaction successful"> </parameter>
+        <parameter name="expectedHeader" value="XYZ Bank"> </parameter>
 
         <classes>
 

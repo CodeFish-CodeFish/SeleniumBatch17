@@ -3,7 +3,7 @@
 <suite name="Smoke Suite">
 
     <test name="Bank Test Main Functionality">
-
+    <parameter name="expectedHeader" value="XYZ Bank"> </parameter>
       <classes>
 
           <class name="com.test.bank.tests.BankLoginTest"> </class>
